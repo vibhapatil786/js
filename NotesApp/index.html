@@ -7,5 +7,12 @@
   </head>
   <body>
     <h2>Notes App</h2>
+    <script>
+      let da = { item1: "working" };
+      let data = JSON.parse(localStorage.setItem("da")) || [];
+      let data1 = localStorage.getItem("data");
+      document.querySelector("h2").innerText = data1;
+      console.log(typeof data1);
+    </script>
   </body>
 </html>
